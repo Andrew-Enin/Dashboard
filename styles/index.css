@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Lato", sans-serif;
+}
+
+.nav_1 a, path {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    width: 50px;
+    height: 30px;
+    padding-inline-start: 10px;
+
+    > img {
+        width: 100%;
+        height: aut0;
+    }
+}
+
+.nav_list_1 .unread_notification {
+    border: 1px solid rgb(228, 225, 225);
+    padding-block: 5px;
+    padding-inline: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+        font-size: .8rem;
+    }
+}
+
+.main_wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.aside_container {
+    padding: 1.5rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navigations_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 30px;
+}
+
+.nav_list_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icon_container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 10px;
+}
+
+/* DASHBOARD STYLE */
+.nav_1 .dashboard_container{
+    background-color: rgba(245, 243, 243, 0.589);
+}
+
+.dashboard path {
+    stroke: blue; 
+}
+
+.dashboard p {
+    color: blue; 
+}
+
+.nav_1 ul li {
+    margin-bottom: 5px;
+}
+
+/* .icon_container path:hover {
+    stroke: blue;
+} */
+
+.nav_1 ul li:hover {
+    background-color: rgb(251, 251, 251);
+}
+
+.nav_2 .nav_2_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+
+    > div {
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgb(224, 223, 223);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+}
+
+.nav_2_container > div p {
+    font-size: .7rem;
+}
+
+.nav_2 > p {
+    padding: 10px;
+    color:  rgb(166, 163, 163);
+}
+
+.nav_list_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+/* USER IMAGE SECTION STYLE*/
+.user_image {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-inline: 10px;
+    column-gap: 10px;
+}
+
+.user_image > div {
+    width: 40px;
+    height: 40px;
+
+    > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+/* MAIN PAGE STYLE */
+.main_container {
+    width: 100%;
+    height: auto;
+}
+
+/* CARDS SECTION */
+main .section_1 {
+    width: 98%;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: hsla(0, 2%, 80%, 0.19);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1rem;
+}
+
+.cards_main_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+  
+}
+
+.card_container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    row-gap: 2rem;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
+}
+
+.analytics_container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1.3rem 1rem 0;
+    column-gap: 1rem;
+}
+
+div .svg_icon{
+    background-color: blue;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.view_all {
+    background-color: rgba(245, 243, 243, 0.589);
+    padding: 1rem;
+
+    > p {
+        font-size: .8rem;
+        color: blue;
+    }
+
+    > p a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.analytics_container > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.analytics_title {
+    font-size: .8rem;
+    color: rgb(164, 158, 158);
+}
+
+.analytics_rating {
+    font-size: 1.2rem;
+}
+
+.rating span {
+    font-size: .8rem;
+    padding-left: 5px;
+    color: green;
+
+    > i {
+        padding-right: 3px;
+    }
+}
+
+/* SECTION 2 STYLING */
+.section_2 {
+    padding: 2rem 2rem;
+    width: 98%;
+    margin: 30px auto 0; 
+    border-radius: 10px;
+    border: 1px solid rgb(228, 223, 223);
+    display: flex;
+    flex-direction: column;
+}
+
+.section_2 > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section_2 > div button {
+    outline: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 10px;
+    color: #ffffff;
+    background-color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_text p:nth-of-type(2) {
+    color: rgb(164, 158, 158);
+    padding-block-start: 10px;
+    font-size: .8rem;
+}
+
+
+/* TABLE STYLE */
+table {
+    margin-top: 32px;
+    border-collapse: collapse;
+}
+
+thead th {
+    text-align: left;
+    padding-bottom: 25px;
+}
+
+table tr td {
+    padding-block: 15px;
+    border-top: 0.3px solid rgba(164, 158, 158, .5);
+}
+
+table tr > div{
+    border-top: 1px solid red;
+}
+
+.edit {
+    text-align: end;
+    > a {
+        text-decoration: none;
+        color: blue;
+    }
+}
+
+td > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 15px;
+
+    > div {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        row-gap: 5px;
+    }
+}
+
+.title_container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+table img {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.user_name, .title_text_1, .role_container  {
+    font-size: .9rem;
+    color: #706f6f;
+}
+
+.user_email, .title_text_2 {
+    font-size: .8rem;
+    color: rgb(164, 158, 158);
+}
+
+.active button{
+    background-color: rgba(79, 239, 79, 0.2);
+    color: green;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgba(79, 239, 79, 0.5);
+}
+
